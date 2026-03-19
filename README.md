@@ -1,4 +1,4 @@
-# Credit-Card-Draud-Detection-Machine-Learning-Project
+# Credit-Card-Fraud-Detection-Machine-Learning-Project
 
 ## Objective
 The goal of this project was to detect fraudulent credit card transactions using machine learning, with a focus on handling an imbalanced classification problem and evaluating model performance beyond simple accuracy.
