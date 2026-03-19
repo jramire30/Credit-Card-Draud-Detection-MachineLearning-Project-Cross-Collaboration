@@ -87,9 +87,9 @@ A model can appear highly accurate while still performing poorly at detecting fr
 Business Decision
 
 Risk Level	Threshold	Action
-🟢 Low	< 0.30	Auto approve
-🟡 Medium	0.30 – 0.90	Manual review
-🔴 High	> 0.90	Auto block
+- 🟢 Low	< 0.30	Auto approve
+- 🟡 Medium	0.30 – 0.90	Manual review
+- 🔴 High	> 0.90	Auto block
 
 ## Tech Stack
 - Python
