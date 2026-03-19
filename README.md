@@ -8,27 +8,51 @@ This project was completed as part of a cross-collaborative sprint. It focused o
 
 ## Dataset
 The dataset contains credit card transaction records labeled as fraudulent or non-fraudulent. Because fraud cases are much less common than legitimate transactions, this project required careful attention to class imbalance and evaluation metrics. Please note this Kaggle dataset has been PCA transformed.
+- Credit card transaction dataset
+- Binary target variable:
+  - 0 → Non-fraud
+  - 1 → Fraud
+- Highly imbalanced dataset (fraud cases are rare)
+- PCA Transformed
 
 ## Methodology
 The workflow for this project included:
 
-- Loading and cleaning the dataset
-- Exploring class imbalance and transaction patterns
-- Preparing features for modeling
-- Training machine learning classifiers
-- Using Random Forest as a primary model
-- Evaluating the model using metrics such as precision, recall, and confusion matrix
+### 1. Data Preparation
+- Cleaned and structured transaction data
+- Separated features and target variable
+- Performed train/test split to ensure proper evaluation
+
+### 2. Handling Class Imbalance
+- Recognized that fraud detection is an imbalanced classification problem
+- Focused on evaluation metrics beyond accuracy
+
+### 3. Modeling
+Two models were implemented:
+- Logistic Regression (baseline)
+- Random Forest (ensemble model)
+
+Random Forest was selected as the final model due to its ability to capture non-linear patterns and improve classification performance.
 
 ## Why Random Forest?
 Random Forest was a strong choice for this problem because it can capture non-linear relationships, handle complex interactions between variables, and provide robust performance on classification tasks.
 
-## Results
-The project successfully demonstrated how machine learning can be used to identify fraudulent transactions. Because fraud detection is an imbalanced classification problem, evaluation focused on metrics such as:
+## Model Evaluation
+
+Because of class imbalance, evaluation focused on:
 
 - Precision
 - Recall
-- Confusion Matrix
-- Classification performance on the minority class
+- Precision-Recall Curve
+- AUPRC (Area Under Precision-Recall Curve)
+
+## Results
+| Model | AUPRC |
+|------|------|
+| Logistic Regression | 0.741 |
+| Random Forest | 0.862 |
+
+Random Forest significantly outperformed Logistic Regression.
 
 ## Key Insights
 - Fraud detection cannot be evaluated using accuracy alone
