@@ -13,7 +13,7 @@ The dataset contains credit card transaction records labeled as fraudulent or no
   - 0 → Non-fraud
   - 1 → Fraud
 - Highly imbalanced dataset (fraud cases are rare)
-- PCA Transformed
+- PCA Transformed (Principal Component Analysis)
 
 ## Methodology
 The workflow for this project included:
